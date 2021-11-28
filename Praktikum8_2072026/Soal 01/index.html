@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="2072026 Budi Santoso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <title>Soal 1</title>
+    </head>
+
+    <body>
+        <script>
+            function faktor(a) {
+                if (a == 0) {
+                    return 1;
+                }
+
+                else {
+                    return a * faktor(a - 1);
+                }
+            }
+
+            let angka = prompt("Bilangan inputan : ");
+            if (angka >= 0) {
+                let hasil = faktor(angka);
+                document.write("Hasil dari " + angka + "! adalah " + hasil)
+            }
+        </script>
+    </body>
+</html>

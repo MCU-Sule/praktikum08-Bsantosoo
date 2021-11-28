@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="2072026 Budi Santoso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <title>Soal 2</title>
+    </head>
+
+    <body>
+        <script>
+            let prima = (angka) => {
+                let dvd = 0;
+                for (let i=1; i <= angka; i++){
+                    if(angka%i == 0){
+                        dvd++;
+                    }
+                }
+            }
+            let input = prompt("Bilangan yang ingin di cek: ");
+            if(dvd < 20){
+                document.write("Bilangan " + input + " adalah bilangan prima")
+            }
+            else {
+                document.write("Bilangan " + input + " adalah bukan bilangan prima")
+            }
+        </script>
+    </body>
+</html>
